@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Vietnam.svg" type="image/x-icon"  />
+    <title>ĐẶC SẢN HÀ NỘI</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+   <header>
+        <a href="#" class="logo">REVIEW<br>HÀ NỘI<span><img src="img/vietnamgif.gif" width="80px" height="60px"></span></a>
+        <ul class="taomenu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>           
+            <li><a href="dulich.html">DU LỊCH</a></li>
+            <li><a href="dacsan.html">ẨM THỰC</a></li>
+            <li><a href="lienhe.html">TÀI KHOẢN</a></li>
+        </ul> 
+    </header>
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="dacsan" id="dacsan">
+        <div class="tieuDe">
+            <h2 class="tieuDeText"> <span style="font-size:50px;">ẨM THỰC HÀ NỘI</span></h2>
+            <br>
+         
+            <p style="font-size:30px; text-align:center;">“Muốn hiểu văn hóa của một vùng, không cách nào nhanh hơn là thưởng thức ẩm thực của vùng đó…”.
+             Những món ăn đặc sản truyền thống của Hà Nội không chỉ làm nức lòng những người con Hà Thành,
+            mà còn khiến du khách thập phương không thể nào quên dù chỉ thử một lần</p> 
+        </div>
+        <div class="content" id="content" style="text-align:center;">
+           
+        </div>
+        <div class="tieuDe">
+            <a href="https://justfly.vn/discovery/vietnam/hanoi/mon-ngon#94582524-ff8a-4216-949b-33df6554431b"
+                class="btn">Xem Thêm</a>
+        </div>  
+    </section>
+    
+    <button  id="btn-remove">Xóa Giỏ Hàng</button>
+        <div id="cart">
+            
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên Món Ăn</th>
+                <th>Ảnh</th>
+                <th>Giá</th>
+                <th>Tình Trạng</th>
+              </tr>
+            </thead>
+            <tbody id="table-data"></tbody>
+            <tfoot id="table-total"></tfoot>
+          </table>
+        </div>     
+        <i class='fas fa-cart-plus' style='font-size:48px;color:red'></i>
+        <button id="btn-show-cart">giỏ hàng</button>
+        <script src="dacSan.js"></script>
+</body>
+</html>
